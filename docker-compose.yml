@@ -1,0 +1,12 @@
+version: "2.1"
+
+services:
+  bind:
+    container_name: bind
+    restart: always
+    image: egoexpress/bind
+
+    # use network stack of OpenVPN container on the same host
+    network_mode: container:openvpn
+    volumes:
+      - /opt/bind:/data
