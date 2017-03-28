@@ -41,7 +41,7 @@ fi
 # launch named
 if [[ -z ${1} ]]; then
   echo "Starting named..."
-  exec $(which named) -u ${BIND_USER} -g ${EXTRA_ARGS}
+  exec $(which named) -c /bind/etc/named.conf -u ${BIND_USER} -g ${EXTRA_ARGS}
 else
   exec "$@"
 fi

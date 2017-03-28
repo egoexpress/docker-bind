@@ -9,4 +9,4 @@ services:
     # use network stack of OpenVPN container on the same host
     network_mode: container:openvpn
     volumes:
-      - /opt/bind:/data
+      - /opt/bind/:/bind
