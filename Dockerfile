@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 
 MAINTAINER Bjoern Stierand <bjoern-github@innovention.de>
 
