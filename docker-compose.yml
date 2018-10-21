@@ -6,7 +6,7 @@ services:
     restart: always
 
     # use network stack of OpenVPN container on the same host
-    network_mode: container:openvpn
+    network_mode: container:openvpn_app_1
     volumes:
       - config:/bind
 
