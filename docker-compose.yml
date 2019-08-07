@@ -4,9 +4,9 @@ services:
   app:
     image: egoexpress/bind
     restart: always
-
-    # use network stack of OpenVPN container on the same host
-    network_mode: container:openvpn_app_1
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
     volumes:
       - config:/bind
 
