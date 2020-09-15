@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 LABEL maintainer="Bjoern Stierand <bjoern-github@innovention.de>"
 
