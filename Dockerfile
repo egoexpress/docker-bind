@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:hirsute
 
 LABEL maintainer="Bjoern Stierand <bjoern-github@innovention.de>"
 
