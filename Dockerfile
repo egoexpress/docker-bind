@@ -1,4 +1,4 @@
-FROM ubuntu:hirsute
+FROM ubuntu:jammy
 
 LABEL maintainer="Bjoern Stierand <bjoern-github@innovention.de>"
 

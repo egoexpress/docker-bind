@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: egoexpress/bind:9.16
+    image: egoexpress/bind:9.18
     restart: always
     ports:
       - "53:53/udp"
