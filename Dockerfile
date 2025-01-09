@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:noble
 
 LABEL maintainer="Bjoern Stierand <bjoern-github@innovention.de>"
 
@@ -7,7 +7,7 @@ RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes && \
     apt-get -yq --no-install-recommends install \
       bind9 \
       bind9-host \
-      netcat && \
+      ncat && \
     rm -rf /var/lib/apt/lists/*
 
 COPY files/docker-entrypoint.sh /docker-entrypoint.sh
